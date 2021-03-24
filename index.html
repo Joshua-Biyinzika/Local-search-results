@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Local Search demo</title>
+</head>
+<body>
+
+    <h1 class="text-center mb-8">
+        Local search demo
+    </h1>
+
+    <form action="https://www.google.com/search" class="search form-group container" method="GET" target="_blank" id="searchForm">
+
+        <input type="text" placeholder="keyword" class="form-control my-3" name="q" id="search-input" required>
+        <input type="text" id="lat" placeholder="latitude" class="form-control my-3">
+        <input type="text" id="long" placeholder="longitude" class="form-control my-3">
+        <input type="text" aria-label="host language" class="form-control my-3" id="hl" name="hl" placeholder="hl">
+        <input type="text" aria-label="geolocation" class="form-control my-3" id="gl" name="gl" placeholder="gl">
+        
+       
+
+
+
+        <input id="ie" name="ie" value="utf-8" type="hidden">
+        <input id="oe" name="oe" value="utf-8" type="hidden">
+        <input id="pws" name="pws" value="0" type="hidden">
+        <input id="uule" name="uule" value="" type="hidden">
+        <input type="hidden" id="num" name="num" value="20">
+
+        <input type="submit" id="button-search" class="btn btn-primary" value="search">
+    
+    </form>
+
+    <div id="map" class="map-container">
+
+    </div>
+
+    
+
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-16113349-11', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
